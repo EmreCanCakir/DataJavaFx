@@ -4,15 +4,18 @@ import com.company.controller.ResultOfPredictionController;
 import com.company.model.Methods;
 import com.company.view.ViewFactory;
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 import javafx.stage.Stage;
+
+import java.util.Optional;
 
 public class Launcher extends Application {
 
     public static void main(String[] args) {
+        Methods.addData();
         launch(args);
+
         //ResultOfPredictionController resultOfPredictionController = new ResultOfPredictionController();
         //resultOfPredictionController.initialize();
     }
@@ -22,4 +25,5 @@ public class Launcher extends Application {
         ViewFactory viewFactory = new ViewFactory(new Methods());
         viewFactory.showMainWindow();
     }
+
 }

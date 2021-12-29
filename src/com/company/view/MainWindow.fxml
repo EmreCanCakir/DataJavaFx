@@ -28,5 +28,6 @@
             <Font size="20.0" />
          </font>
       </Button>
+      <Label fx:id="lblError" layoutY="417.0" prefHeight="22.0" prefWidth="734.0" />
    </children>
 </AnchorPane>

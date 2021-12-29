@@ -1,8 +1,7 @@
 package com.company.view;
 
-import com.company.controller.BaseController;
-import com.company.controller.MainWindowController;
-import com.company.controller.ResultOfPredictionController;
+import com.company.controller.*;
+import com.company.model.BaseDataSet;
 import com.company.model.Methods;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -19,16 +18,27 @@ public class ViewFactory {
     }
 
     public void showMainWindow() {
-        System.out.println("show main window is called. ");
         BaseController controller = new MainWindowController(this, "MainWindow.fxml", methods);
         initializeStage(controller);
     }
 
     public void showPredictionControllerWindow() {
-        System.out.println("show prediction window is called. ");
         BaseController controller = new ResultOfPredictionController(this, "ResultOfPrediction.fxml", methods);
         initializeStage(controller);
     }
+    public void showDataOperationsController(){
+        BaseController controller = new DataOperationsController(this,"DataOperations.fxml",methods);
+        initializeStage(controller);
+    }
+    public void showReverseOrderController(){
+        BaseController controller = new ShowReverseOrderController(this,"ShowReverseOrder.fxml",methods);
+        initializeStage(controller);
+    }
+    public void showMinMaxController(){
+        BaseController controller = new ShowMinMaxController(this,"showMinMax.fxml",methods);
+        initializeStage(controller);
+    }
+
 
     public void initializeStage(BaseController controller) {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(controller.getFxmlName()));
