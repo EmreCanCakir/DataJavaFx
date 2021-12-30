@@ -114,9 +114,9 @@ public class BaseDataSet {
 
     //This function get the node in the given index
     public Element getByPosition(int pos) {
-        if (this.isEmpty())
+        if (Methods.realDataSet1.isEmpty())
             return new Element(0);
-        Element current = this.head;
+        Element current = Methods.realDataSet1.head;
         int index = 0;
 
         while (current != null) {

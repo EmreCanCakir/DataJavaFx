@@ -6,6 +6,7 @@ public class Methods {
 
     static BaseDataSet realDataSet1 = new RealData();
     static BaseDataSet realdataSet2 = new RealData();
+
     //This method add elements
     public static void addData() {
         realDataSet1.insert(300);
@@ -33,6 +34,7 @@ public class Methods {
         realDataSet1.insert(740);
         realDataSet1.insert(770);
     }
+
     //This method provides add data to dataset2
     public static void addData2() {
         realdataSet2.insert(200);
@@ -60,6 +62,7 @@ public class Methods {
         realdataSet2.insert(960);
         realdataSet2.insert(980);
     }
+
     //This method provides to calculate mse
     public double mse(double[] forecast) {
         double mse = 0;
@@ -72,11 +75,12 @@ public class Methods {
         mse = sum / 24;
         return mse;
     }
+
     //This method provides to find max element
     public double findMaximum() {
-        BaseDataSet dataSet =realDataSet1;
+        BaseDataSet dataSet = realDataSet1;
         double maximum = 0;
-       // BaseDataSet baseDataSet = realDataSet1;
+        // BaseDataSet baseDataSet = realDataSet1;
         if (dataSet.isEmpty()) {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("INFORMATION");
@@ -94,9 +98,10 @@ public class Methods {
         }
         return maximum;
     }
+
     //This method provides to find min element
     public double findMinimum() {
-        BaseDataSet dataSet=realDataSet1;
+        BaseDataSet dataSet = realDataSet1;
         double minimum = dataSet.head.getValue();
         if (dataSet.isEmpty()) {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -115,6 +120,7 @@ public class Methods {
         }
         return minimum;
     }
+
     //This method provides to reverse dataset
     public double[] reverse() {
         double[] array2 = new double[24];
@@ -134,6 +140,7 @@ public class Methods {
         }
         return array2;
     }
+
     //This method provides to update element
     public void update(int index, double value) {
         if (realDataSet1.isEmpty()) {
@@ -178,6 +185,7 @@ public class Methods {
 
         }
     }
+
     //This method provides to delete dataset
     public boolean deleteAll() {
 
@@ -188,6 +196,7 @@ public class Methods {
         }
         return false;
     }
+
     //This method provides to compare mse results
     public int resultOfMse() {
         ExponentialSmoothing exponentialSmoothing = new ExponentialSmoothing();

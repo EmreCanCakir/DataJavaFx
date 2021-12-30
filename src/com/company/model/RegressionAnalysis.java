@@ -47,6 +47,7 @@ public class RegressionAnalysis {
         }
         for(int j = 0;j<24;j++){
             forecast[j]=forecast1.getByPosition(j).getValue();
+            System.out.println(forecast1.getByPosition(j).getValue());
         }
 
         return forecast;

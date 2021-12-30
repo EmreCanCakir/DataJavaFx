@@ -14,8 +14,9 @@
       </Label>
       <Button layoutX="66.0" layoutY="114.0" mnemonicParsing="false" onAction="#btnShowMaxMin" prefHeight="72.0" prefWidth="182.0" text="SHOW MAX AND MIN DATA" />
       <Button layoutX="346.0" layoutY="114.0" mnemonicParsing="false" onAction="#btnReverseData" prefHeight="72.0" prefWidth="182.0" text="SHOW REVERSE ORDER DATA" />
-      <Button layoutX="66.0" layoutY="245.0" mnemonicParsing="false" onAction="#btnUpdateData" prefHeight="72.0" prefWidth="182.0" text="UPDATE DATA" />
-      <Button layoutX="346.0" layoutY="245.0" mnemonicParsing="false" onAction="#btnDeleteAllData" prefHeight="72.0" prefWidth="182.0" text="DELETE ALL DATA" />
+      <Button layoutX="66.0" layoutY="209.0" mnemonicParsing="false" onAction="#btnUpdateData" prefHeight="72.0" prefWidth="182.0" text="UPDATE DATA" />
+      <Button layoutX="346.0" layoutY="209.0" mnemonicParsing="false" onAction="#btnDeleteAllData" prefHeight="72.0" prefWidth="182.0" text="DELETE ALL DATA" />
       <Label fx:id="lblError" layoutY="369.0" prefHeight="33.0" prefWidth="600.0" />
+      <Button layoutX="209.0" layoutY="297.0" mnemonicParsing="false" onAction="#btnFindElement" prefHeight="72.0" prefWidth="182.0" text="FIND ELEMENT IN DATASET" />
    </children>
 </AnchorPane>

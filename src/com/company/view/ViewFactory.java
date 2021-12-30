@@ -38,7 +38,10 @@ public class ViewFactory {
         BaseController controller = new ShowMinMaxController(this,"showMinMax.fxml",methods);
         initializeStage(controller);
     }
-
+    public void findElement(){
+        BaseController controller = new FindElementController(this,"findElement.fxml",methods);
+        initializeStage(controller);
+    }
 
     public void initializeStage(BaseController controller) {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(controller.getFxmlName()));
