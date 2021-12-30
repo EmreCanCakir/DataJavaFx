@@ -2,7 +2,6 @@ package com.company.controller;
 
 import com.company.model.BaseDataSet;
 import com.company.model.Methods;
-import com.company.model.RealData;
 import com.company.view.ViewFactory;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;

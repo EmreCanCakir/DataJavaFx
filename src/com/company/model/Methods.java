@@ -226,22 +226,5 @@ public class Methods {
             return 4;
         }
     }
-    /*public boolean selectDataSet(){
-        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-        alert.setTitle("CONFIRMATION");
-        alert.setHeaderText(null);
-        alert.setContentText("PLEASE SELECT THE DATASET YOU WANT TO DO PROCESS");
-        ButtonType btnDataset1 = new ButtonType("DATASET1");
-        ButtonType btnDataset2 = new ButtonType("DATASET2");
-        alert.getButtonTypes().setAll(btnDataset1,btnDataset2);
-        Optional<ButtonType> result = alert.showAndWait();
-        if(result.get()==btnDataset1){
-            addData();
-            return true;
-        }
-        else {
-            addData2();
-            return false;
-        }
-    }*/
+
 }
